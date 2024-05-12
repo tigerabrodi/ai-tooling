@@ -3,13 +3,19 @@ import 'dotenv/config'
 import OpenAI from 'openai'
 const openai = new OpenAI()
 
-openai.chat.completions.create({
+const results = await openai.chat.completions.create({
   model: 'gpt-3.5-turbo',
   messages: [
     {
-      role: '',
+      role: 'system',
       content:
         'You are an AI assistant, answer any questions to the best of your ability',
     },
+    {
+      role: 'user',
+      content: 'Hi!',
+    },
   ],
 })
+
+console.log(results)

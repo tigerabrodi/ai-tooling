@@ -57,3 +57,11 @@ You think of this as a way to translate text into a language that computers can 
 LLMs don't assign random numbers to words. Instead, they learn the best numerical representations for words by training on large amounts of text data. This process helps the model understand the relationships between words and phrases, making it better at tasks like semantic search and language generation.
 
 Words like "king" and "queen" might have similar vectors because they are related concepts. Similarly, words like "cat" and "dog" might have similar vectors because they are both animals.
+
+# Document QA
+
+Document QA is where an AI model answers questions based on a given document or text. The model reads the text, understands its content, and then generates answers to questions asked about the text.
+
+It's super effective for tasks like reading comprehension, fact-checking, and information retrieval. The model can quickly scan through large amounts of text and provide accurate answers to a wide range of questions.
+
+It's also more accurate than usual because there is a single source of truth (the document) that the model can refer to when generating answers.
